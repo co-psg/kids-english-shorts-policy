@@ -1,0 +1,414 @@
+<title>Privacy Policy & Terms of Service — Kids English Shorts Auto-Poster</title>
+<style>
+  :root {
+    --bg: #f2f5f6;
+    --paper: #ffffff;
+    --ink: #1e2a2e;
+    --ink-soft: #4b5d63;
+    --ink-faint: #7c8b8f;
+    --accent: #1f6672;
+    --accent-soft: #dcebee;
+    --rule: #cdd8da;
+    --code-bg: #eef3f3;
+  }
+  :root[data-theme="dark"] {
+    --bg: #10171a;
+    --paper: #16201f;
+    --ink: #e6edee;
+    --ink-soft: #a3b4b7;
+    --ink-faint: #74898c;
+    --accent: #74c3ce;
+    --accent-soft: #1c3236;
+    --rule: #2b3a3d;
+    --code-bg: #1c2729;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10171a;
+      --paper: #16201f;
+      --ink: #e6edee;
+      --ink-soft: #a3b4b7;
+      --ink-faint: #74898c;
+      --accent: #74c3ce;
+      --accent-soft: #1c3236;
+      --rule: #2b3a3d;
+      --code-bg: #1c2729;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body { overflow-x: hidden; }
+
+  .meta-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+  }
+
+  .shell {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 200px minmax(0, 680px);
+    gap: 56px;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .shell { grid-template-columns: 1fr; }
+    .toc { display: none; }
+  }
+
+  header.doc-head {
+    padding: 72px 0 40px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 48px;
+  }
+  header.doc-head .shell { padding-bottom: 0; gap: 56px; }
+  .doc-title {
+    font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+    line-height: 1.15;
+    margin: 10px 0 14px;
+    text-wrap: balance;
+    font-weight: 600;
+  }
+  .doc-sub {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    max-width: 46ch;
+    margin: 0;
+  }
+  .doc-dates {
+    margin-top: 22px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+  .doc-dates div { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  .doc-dates .val {
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    font-size: 0.92rem;
+    margin-top: 2px;
+  }
+
+  nav.toc {
+    position: sticky;
+    top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-size: 0.86rem;
+  }
+  nav.toc .toc-group { margin-bottom: 22px; }
+  nav.toc .toc-group-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  nav.toc a {
+    display: block;
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 5px 0;
+    border-left: 2px solid transparent;
+    padding-left: 10px;
+    margin-left: -11px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--ink); border-left-color: var(--accent); }
+
+  main { min-width: 0; padding-bottom: 100px; }
+
+  section.doc-section { margin-bottom: 64px; }
+  section.doc-section:target { scroll-margin-top: 32px; }
+
+  .section-eyebrow {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .section-num {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  h2.part-title {
+    font-size: 1.9rem;
+    margin: 0 0 6px;
+    padding-top: 8px;
+    text-wrap: balance;
+  }
+  .part-intro {
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    margin: 0 0 36px;
+    max-width: 62ch;
+  }
+
+  article.clause { margin-bottom: 34px; }
+  h3.clause-title {
+    font-size: 1.18rem;
+    margin: 0 0 10px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  h3.clause-title .num { color: var(--accent-num, var(--accent)); font-size: 0.95rem; opacity: 0.75; }
+
+  p, li { font-size: 1.03rem; line-height: 1.68; color: var(--ink); max-width: 65ch; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 600; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 0.96rem;
+    color: var(--ink);
+  }
+  .callout .meta-label { color: var(--accent); margin-bottom: 6px; display: block; }
+
+  code, .inline-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--code-bg);
+    padding: 0.12em 0.4em;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 8px 0 56px;
+  }
+
+  table.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 18px 0 28px;
+    font-size: 0.94rem;
+  }
+  table.data-table th, table.data-table td {
+    text-align: left;
+    padding: 10px 14px 10px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.data-table th {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  .table-wrap { overflow-x: auto; }
+
+  footer.doc-foot {
+    border-top: 1px solid var(--rule);
+    padding: 40px 0 80px;
+  }
+  footer.doc-foot p { color: var(--ink-faint); font-size: 0.9rem; }
+  a.contact-link { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+</style>
+
+<header class="doc-head">
+  <div class="shell" style="grid-template-columns: 200px minmax(0,680px);">
+    <div></div>
+    <div>
+      <span class="meta-label">Internal tool documentation</span>
+      <h1 class="doc-title">Kids English Shorts Auto&#8209;Poster</h1>
+      <p class="doc-sub">Privacy Policy and Terms of Service for the personal automation tool that publishes children&rsquo;s phonics videos to YouTube and TikTok on behalf of its single operator.</p>
+      <div class="doc-dates">
+        <div>
+          <span class="meta-label">Effective date</span>
+          <div class="val">July 26, 2026</div>
+        </div>
+        <div>
+          <span class="meta-label">Last updated</span>
+          <div class="val">July 26, 2026</div>
+        </div>
+        <div>
+          <span class="meta-label">Operator</span>
+          <div class="val">co.psg0316@gmail.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-group">
+      <div class="toc-group-title">Privacy Policy</div>
+      <a href="#privacy-overview">Overview</a>
+      <a href="#privacy-data-collected">Data collected</a>
+      <a href="#privacy-data-use">How data is used</a>
+      <a href="#privacy-tiktok-data">TikTok platform data</a>
+      <a href="#privacy-storage">Storage &amp; retention</a>
+      <a href="#privacy-sharing">Sharing &amp; disclosure</a>
+      <a href="#privacy-childrens">Children&rsquo;s content note</a>
+      <a href="#privacy-rights">Your rights</a>
+      <a href="#privacy-contact">Contact</a>
+    </div>
+    <div class="toc-group">
+      <div class="toc-group-title">Terms of Service</div>
+      <a href="#terms-acceptance">Acceptance</a>
+      <a href="#terms-what-it-does">What the tool does</a>
+      <a href="#terms-accounts">Connected accounts</a>
+      <a href="#terms-conduct">Acceptable use</a>
+      <a href="#terms-availability">Availability</a>
+      <a href="#terms-liability">Liability</a>
+      <a href="#terms-changes">Changes</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="doc-section" id="privacy" aria-labelledby="privacy-heading">
+      <div class="section-eyebrow"><span class="section-num">PART I</span></div>
+      <h2 class="part-title" id="privacy-heading">Privacy Policy</h2>
+      <p class="part-intro">This tool is a single-operator automation script. It has no public sign-up, no user accounts of its own, and no visitors other than its operator. This policy explains, plainly, what it touches and why.</p>
+
+      <article class="clause" id="privacy-overview">
+        <h3 class="clause-title"><span class="num">1.1</span>Overview</h3>
+        <p>Kids English Shorts Auto-Poster is a local command-line tool built for one person &mdash; its operator &mdash; to schedule and publish short-form English-learning videos for children (phonics lessons featuring the character &ldquo;Momo&rdquo;) to the operator&rsquo;s own YouTube and TikTok accounts. It is not distributed to other users and does not process data belonging to anyone other than the operator and the operator&rsquo;s own connected accounts.</p>
+      </article>
+
+      <article class="clause" id="privacy-data-collected">
+        <h3 class="clause-title"><span class="num">1.2</span>Data the tool collects</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr><th>Category</th><th>Examples</th><th>Source</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Video content</td><td>MP4 files, narration audio, subtitle files, illustration images</td><td>Generated locally by the operator</td></tr>
+              <tr><td>Video metadata</td><td>Title, description, tags, privacy setting</td><td>Authored by the operator</td></tr>
+              <tr><td>OAuth credentials</td><td>Client ID/secret, access &amp; refresh tokens for YouTube and TikTok</td><td>Issued by Google and TikTok when the operator authorizes the tool</td></tr>
+              <tr><td>Creator info</td><td>TikTok username, avatar, posting permissions (via Query Creator Info)</td><td>TikTok API, returned about the operator&rsquo;s own account only</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="clause" id="privacy-data-use">
+        <h3 class="clause-title"><span class="num">1.3</span>How this data is used</h3>
+        <ul>
+          <li>Uploading and publishing the operator&rsquo;s own videos to the operator&rsquo;s own YouTube channel and TikTok account.</li>
+          <li>Reading the operator&rsquo;s creator posting permissions and duet/stitch/comment settings before a post, so the request TikTok receives matches what the operator&rsquo;s account currently allows.</li>
+          <li>Refreshing expired access tokens automatically so re-authorization isn&rsquo;t required for every post.</li>
+        </ul>
+        <p>The tool does not use this data for advertising, profiling, analytics resale, or any purpose beyond publishing the operator&rsquo;s own content.</p>
+      </article>
+
+      <article class="clause" id="privacy-tiktok-data">
+        <h3 class="clause-title"><span class="num">1.4</span>TikTok platform data</h3>
+        <p>Where the tool integrates with TikTok, it accesses only what the Content Posting API exposes about the authorizing account: basic profile info (username, avatar) and creator posting settings (privacy level options, duet/stitch/comment toggles, branded-content status). It does not read the operator&rsquo;s TikTok inbox, followers, or any other account&rsquo;s data, and it does not use TikTok data to train models of any kind.</p>
+      </article>
+
+      <article class="clause" id="privacy-storage">
+        <h3 class="clause-title"><span class="num">1.5</span>Storage &amp; retention</h3>
+        <p>All credentials and video assets are stored locally on the operator&rsquo;s own machine, inside the project&rsquo;s <code>secrets/</code> and <code>output/</code> directories. Nothing is transmitted to a third-party server operated by anyone other than YouTube (Google) or TikTok themselves &mdash; the destinations the operator explicitly authorized. Tokens persist until the operator revokes them from their Google or TikTok account settings, or deletes the local token files.</p>
+      </article>
+
+      <article class="clause" id="privacy-sharing">
+        <h3 class="clause-title"><span class="num">1.6</span>Sharing &amp; disclosure</h3>
+        <p>Data is not sold, rented, or shared with any party beyond the platforms the video is being published to (YouTube, TikTok) as a direct result of the operator&rsquo;s own publish action.</p>
+      </article>
+
+      <article class="clause" id="privacy-childrens">
+        <h3 class="clause-title"><span class="num">1.7</span>Note on children&rsquo;s content</h3>
+        <div class="callout">
+          <span class="meta-label">Made for kids, not by kids</span>
+          The videos this tool publishes are educational content <em>for</em> a young audience (ages 3&ndash;7). The tool itself collects no data from viewers or children of any age &mdash; it has no comment system, no viewer accounts, and no analytics collection beyond what YouTube/TikTok natively report to the video owner. Videos are marked as made-for-kids on YouTube where applicable.
+        </div>
+      </article>
+
+      <article class="clause" id="privacy-rights">
+        <h3 class="clause-title"><span class="num">1.8</span>Your rights, as the operator</h3>
+        <p>Because the operator is the sole subject of this policy, all rights are exercised directly: revoke YouTube access at <a class="contact-link" href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, revoke TikTok access from TikTok&rsquo;s app settings, or delete local token files to immediately stop the tool from posting.</p>
+      </article>
+
+      <article class="clause" id="privacy-contact">
+        <h3 class="clause-title"><span class="num">1.9</span>Contact</h3>
+        <p>Questions about this policy can be sent to <a class="contact-link" href="mailto:co.psg0316@gmail.com">co.psg0316@gmail.com</a>.</p>
+      </article>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="doc-section" id="terms" aria-labelledby="terms-heading">
+      <div class="section-eyebrow"><span class="section-num">PART II</span></div>
+      <h2 class="part-title" id="terms-heading">Terms of Service</h2>
+      <p class="part-intro">Plain-language terms governing use of the tool by its operator.</p>
+
+      <article class="clause" id="terms-acceptance">
+        <h3 class="clause-title"><span class="num">2.1</span>Acceptance</h3>
+        <p>By configuring API credentials and running this tool, the operator agrees to these terms and to the terms of service of each connected platform (YouTube/Google, TikTok).</p>
+      </article>
+
+      <article class="clause" id="terms-what-it-does">
+        <h3 class="clause-title"><span class="num">2.2</span>What the tool does</h3>
+        <p>The tool assembles short videos from operator-supplied narration, illustrations or AI-generated video clips, and subtitles, then publishes the finished file to the operator&rsquo;s own YouTube and/or TikTok account using each platform&rsquo;s official upload API. Every publish action is initiated directly by the operator running the script; nothing posts on a hidden schedule without the operator&rsquo;s command.</p>
+      </article>
+
+      <article class="clause" id="terms-accounts">
+        <h3 class="clause-title"><span class="num">2.3</span>Connected accounts</h3>
+        <p>The operator authorizes the tool to act on their own YouTube and TikTok accounts via OAuth. The tool never requests or stores the operator&rsquo;s platform password &mdash; only the access tokens each platform issues after the operator signs in directly on that platform&rsquo;s own login page.</p>
+      </article>
+
+      <article class="clause" id="terms-conduct">
+        <h3 class="clause-title"><span class="num">2.4</span>Acceptable use</h3>
+        <ul>
+          <li>The tool is used only to publish content the operator created or has full rights to publish.</li>
+          <li>Content published must comply with YouTube&rsquo;s and TikTok&rsquo;s respective Community Guidelines, including rules for content directed at children.</li>
+          <li>The tool is not used to post on behalf of any account other than the operator&rsquo;s own.</li>
+        </ul>
+      </article>
+
+      <article class="clause" id="terms-availability">
+        <h3 class="clause-title"><span class="num">2.5</span>Availability</h3>
+        <p>This is a personal-use script, not a hosted service. It has no uptime commitment and depends on the continued availability of the YouTube Data API and TikTok Content Posting API.</p>
+      </article>
+
+      <article class="clause" id="terms-liability">
+        <h3 class="clause-title"><span class="num">2.6</span>Liability</h3>
+        <p>The tool is provided as-is, for the operator&rsquo;s own use. The operator is solely responsible for the content it publishes and for compliance with each platform&rsquo;s policies and applicable law.</p>
+      </article>
+
+      <article class="clause" id="terms-changes">
+        <h3 class="clause-title"><span class="num">2.7</span>Changes to these terms</h3>
+        <p>These terms may be updated as the tool&rsquo;s functionality changes. The &ldquo;Last updated&rdquo; date at the top of this page reflects the most recent revision.</p>
+      </article>
+    </section>
+  </main>
+</div>
+
+<footer class="doc-foot">
+  <div class="shell" style="grid-template-columns: 200px minmax(0,680px);">
+    <div></div>
+    <p>Kids English Shorts Auto&#8209;Poster &mdash; a personal automation project. Questions: <a class="contact-link" href="mailto:co.psg0316@gmail.com">co.psg0316@gmail.com</a></p>
+  </div>
+</footer>
